@@ -1,7 +1,7 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick3D 1.15
-import QtQuick3D.Helpers 1.15
+import QtQuick
+import QtQuick.Controls
+import QtQuick3D
+import QtQuick3D.Helpers
 
 import Example 1.0
 
@@ -15,7 +15,7 @@ ApplicationWindow {
     View3D {
         anchors.fill: parent
         environment: SceneEnvironment {
-            lightProbe: Texture{
+            lightProbe: Texture {
                 source: "imageTesto.hdr"
             }
             backgroundMode: SceneEnvironment.SkyBox
@@ -31,17 +31,17 @@ ApplicationWindow {
         }
 
         Model {
-            geometry: CustomGeometry{
+            geometry: CustomGeometry {
                 name: "mypointcloud"
                 count: 10000000
             }
-            materials: PrincipledMaterial{
-            pointSize: 10
+            materials: PrincipledMaterial {
+                pointSize: 10
             }
         }
     }
 
-    WasdController{
+    WasdController {
         controlledObject: camera
     }
 }

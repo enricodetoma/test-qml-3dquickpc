@@ -37,7 +37,7 @@ void MyCustomPointCloud::updateGeometry()
     }
 
     setVertexData(vertexData);
-    setPrimitiveType(QQuick3DGeometry::PrimitiveType::Points);
+    setPrimitiveType(QQuick3DGeometry::Points);
     setStride(3 * sizeof(float));
     addAttribute(QQuick3DGeometry::Attribute::PositionSemantic,
                  0,
