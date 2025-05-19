@@ -32,7 +32,6 @@ ApplicationWindow {
 
         Model {
             geometry: CustomGeometry {
-                name: "mypointcloud"
                 count: 10000000
             }
             materials: PrincipledMaterial {
